@@ -1,0 +1,341 @@
+import React from "react";
+import "./App.css";
+
+function App() {
+  return (
+    <div className="container">
+
+      {/* HEADER */}
+      <header className="header">
+        <div className="profile-pic">Picture</div>
+        <h1>My Portfolio</h1>
+      </header>
+
+      {/* ABOUT + SOCIALS */}
+      <section className="about-socials">
+        <div className="about">
+          <h2>About Me</h2>
+          <p>
+            Hi! I'm a student who enjoys coding and building simple projects.
+          </p>
+        </div>
+
+        <div className="socials">
+          <h2>My Socials</h2>
+          <p>Facebook</p>
+          <p>GitHub</p>
+          <p>Instagram</p>
+        </div>
+      </section>
+
+      {/* PROJECTS */}
+      <section className="projects-section">
+        <h2>My Projects</h2>
+
+        <div className="projects">
+          <div className="project-card">
+            <div className="project-img">Image</div>
+            <h3>Project 1</h3>
+            <p>About project</p>
+          </div>
+
+          <div className="project-card">
+            <div className="project-img">Image</div>
+            <h3>Project 2</h3>
+            <p>About project</p>
+          </div>
+
+          <div className="project-card">
+            <div className="project-img">Image</div>
+            <h3>Project 3</h3>
+            <p>About project</p>
+          </div>
+        </div>
+      </section>
+
+      {/* CONTACT */}
+      <section className="contact">
+        <h2>Contact Me</h2>
+
+        <form>
+          <input type="text" placeholder="Full Name" required />
+          <input type="email" placeholder="Email" required />
+          <input type="text" placeholder="Contact" required />
+          <textarea placeholder="Message" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="footer">
+        <p>Made by Mickzz</p>
+      </footer>
+
+    </div>
+  );
+}
+
+export default App;
+
+
+
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+/* MAIN CONTAINER */
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  padding: 20px;
+  position: relative;
+}
+
+.profile-pic {
+  position: absolute;
+  left: 20px;
+  width: 80px;
+  height: 80px;
+  border: 2px solid black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ABOUT + SOCIALS */
+.about-socials {
+  display: flex;
+  border: 2px solid black;
+  margin-top: 10px;
+}
+
+.about, .socials {
+  flex: 1;
+  padding: 20px;
+}
+
+.about {
+  border-right: 2px solid black;
+}
+
+/* PROJECTS */
+.projects-section {
+  border: 2px solid black;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-card {
+  width: 30%;
+  border: 2px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+.project-img {
+  height: 100px;
+  border: 2px solid black;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CONTACT */
+.contact {
+  border: 2px solid black;
+  margin-top: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input, textarea {
+  width: 60%;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+button {
+  padding: 10px 20px;
+  border: 2px solid black;
+  background: white;
+  cursor: pointer;
+}
+
+/* FOOTER */
+.footer {
+  border: 2px solid black;
+  margin-top: 10px;
+  text-align: center;
+  padding: 10px;
+}
+
+
+
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff5f7; /* very light pink */
+}
+
+/* MAIN CONTAINER */
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #f8c8dc;
+  padding: 20px;
+  position: relative;
+  background: #ffe4ec;
+}
+
+.header h1 {
+  color: #d63384; /* sakura pink */
+}
+
+.profile-pic {
+  position: absolute;
+  left: 20px;
+  width: 80px;
+  height: 80px;
+  border: 2px solid #f8c8dc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+/* ABOUT + SOCIALS */
+.about-socials {
+  display: flex;
+  border: 2px solid #f8c8dc;
+  margin-top: 10px;
+  background: #fff0f5;
+}
+
+.about, .socials {
+  flex: 1;
+  padding: 20px;
+}
+
+.about {
+  border-right: 2px solid #f8c8dc;
+}
+
+h2 {
+  color: #c2185b;
+}
+
+/* PROJECTS */
+.projects-section {
+  border: 2px solid #f8c8dc;
+  margin-top: 10px;
+  padding: 20px;
+  background: #fff0f5;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-card {
+  width: 30%;
+  border: 2px solid #f8c8dc;
+  padding: 20px;
+  text-align: center;
+  background: #ffffff;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  background: #ffe4ec;
+  transform: scale(1.05);
+}
+
+/* CONTACT */
+.contact {
+  border: 2px solid #f8c8dc;
+  margin-top: 10px;
+  padding: 20px;
+  text-align: center;
+  background: #fff0f5;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input, textarea {
+  width: 60%;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid #f8c8dc;
+  background: #fff;
+  outline: none;
+}
+
+input:focus, textarea:focus {
+  border-color: #d63384;
+}
+
+/* BUTTON */
+button {
+  padding: 10px 20px;
+  border: none;
+  background: #ff8fab;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #d63384;
+}
+
+/* FOOTER */
+.footer {
+  border: 2px solid #f8c8dc;
+  margin-top: 10px;
+  text-align: center;
+  padding: 10px;
+  background: #ffe4ec;
+  color: #c2185b;
+}

@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff5f7;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+}
+
+.header h1 {
+    color: #d63384
+}
+
+.Logo {
+    position: absolute;
+    left: 20px;
+    width: 80px;
+    height: 80px;
+    border: 2px solid #f8c8dc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+
+.about-contacts {
+    display: flex;
+    margin-top: 10px;
+    background: #fff0f5;
+}
+
+.about, .contacts {
+    flex: 1;
+    padding: 20px;
+}
+
+.about {
+    border-right: 1px solid #f8c8dc;
+}
+
+h2 {
+    color: #c2185b;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-box {
+    width: 30%;
+    border: 1px solid #f8c8dc;
+    padding: 20px;
+    text-align: center;
+    background: #ffffff;
+    transition: 0.3s;
+}
+
+.project-box:hover {
+    background: #ffe4ec;
+    transform:scale(1.05);
+}
+
+.contact-me {
+    border: 1px solid #f8c8dc;
+    margin-top: 10px;
+    padding: 20px;
+    text-align: center;
+    background: #fff0f5;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, textarea {
+    width: 60%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #f8c8dc;
+    background: #fff;
+    outline: none;
+}
+
+input:focus, textarea:focus {
+    border-color: #d63384;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: #ff8fab;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
