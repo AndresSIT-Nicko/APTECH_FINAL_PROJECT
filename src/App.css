@@ -32,6 +32,13 @@ body {
     align-items: center;
     justify-content: center;
     background: #fff;
+    overflow: hidden;
+}
+
+.Logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
 }
 
 .about-contacts {
@@ -46,7 +53,7 @@ body {
 }
 
 .about {
-    border-right: 1px solid #f8c8dc;
+    border-right: 2px solid #f8c8dc;
 }
 
 h2 {

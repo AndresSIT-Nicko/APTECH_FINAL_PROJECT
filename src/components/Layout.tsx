@@ -1,10 +1,12 @@
-
+import logo from '../Pictures/Nickzz Logo.png';
 function Layout() {
 
     return (
         <div className="container">
             <header className="header">
-                <div className="Logo">Logo</div>
+                <div className="Logo">
+                    <img src={logo} alt="Nickzz Logo.png" />
+                </div>
                 <h1>My Portfolio</h1>
             </header>
 <hr></hr>
