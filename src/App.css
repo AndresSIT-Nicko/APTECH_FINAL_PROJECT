@@ -115,3 +115,38 @@ button {
     transition: 0.3s;
 }
 
+
+ /*for Registration */
+.register-section {
+  border: 1px solid #f5b6c8;
+  padding: 30px;
+  margin-top: 30px;
+  text-align: center;
+  background: #fff5f8;
+}
+
+.register-section h2 {
+  color: #d81b60;
+  margin-bottom: 20px;
+}
+
+.register-form {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.register-form input {
+  padding: 12px;
+  border: 1px solid #f5b6c8;
+}
+
+.register-form button {
+  padding: 12px;
+  border: none;
+  background: #f48fb1;
+  color: white;
+  cursor: pointer;
+}

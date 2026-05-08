@@ -1,6 +1,8 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import logo from '../Pictures/Nickzz Logo.png';
+import Register from "./Register";
+
 function Layout() {
     type FormData = {
     name: string;
@@ -130,6 +132,7 @@ const handleSubmit = async (e: React.FormEvent) => {
             </section> 
 <br></br>
 <hr></hr>
+
            <section className="contact-me">
     <h2>Contact Me</h2>
 
@@ -164,7 +167,7 @@ const handleSubmit = async (e: React.FormEvent) => {
         <p>{status}</p>
     </form>
 </section>
-
+<Register />
         </div>
     );
 }
