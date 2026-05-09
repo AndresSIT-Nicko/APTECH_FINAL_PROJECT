@@ -18,6 +18,11 @@ const Register: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
+    if (!formData.fullName || !formData.email || !formData.password) {
+      alert("Please fill out all fields");
+      return;
+    }
+
     if (formData.password !== formData.confirmPassword) {
       alert("Passwords do not match");
       return;
@@ -26,9 +31,7 @@ const Register: React.FC = () => {
     try {
       const res = await fetch("http://localhost:5000/register", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           fullName: formData.fullName,
           email: formData.email,
@@ -37,8 +40,7 @@ const Register: React.FC = () => {
       });
 
       const data = await res.json();
-
-      alert(data.message);
+      alert(data.message || "Unexpected response from server");
 
       setFormData({
         fullName: "",
@@ -46,7 +48,6 @@ const Register: React.FC = () => {
         password: "",
         confirmPassword: "",
       });
-
     } catch (error) {
       console.error(error);
       alert("Error registering user");
@@ -56,7 +57,6 @@ const Register: React.FC = () => {
   return (
     <section className="register-section">
       <h2>Create Account</h2>
-
       <form onSubmit={handleSubmit} className="register-form">
         <input
           type="text"
@@ -65,7 +65,6 @@ const Register: React.FC = () => {
           value={formData.fullName}
           onChange={handleChange}
         />
-
         <input
           type="email"
           name="email"
@@ -73,7 +72,6 @@ const Register: React.FC = () => {
           value={formData.email}
           onChange={handleChange}
         />
-
         <input
           type="password"
           name="password"
@@ -81,7 +79,6 @@ const Register: React.FC = () => {
           value={formData.password}
           onChange={handleChange}
         />
-
         <input
           type="password"
           name="confirmPassword"
@@ -89,10 +86,7 @@ const Register: React.FC = () => {
           value={formData.confirmPassword}
           onChange={handleChange}
         />
-
-        <button type="submit">
-          Create Account
-        </button>
+        <button type="submit">Create Account</button>
       </form>
     </section>
   );

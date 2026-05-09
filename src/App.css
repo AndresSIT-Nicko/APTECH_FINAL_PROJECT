@@ -4,149 +4,238 @@ body {
     background: #fff5f7;
 }
 
+/* CONTAINER */
 .container {
     width: 90%;
     margin: auto;
+    padding-bottom: 30px;
 }
 
+/* HEADER */
 .header {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
     position: relative;
+    padding: 20px 0;
 }
 
 .header h1 {
-    color: #d63384
+    font-size: 55px;
+    color: #c76b98;
+    margin: 0;
+    cursor: pointer;
+    font-weight: normal;
 }
 
+/* LOGO */
 .Logo {
     position: absolute;
     left: 20px;
     width: 80px;
     height: 80px;
-    border: 2px solid #f8c8dc;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #fff;
     overflow: hidden;
+    border: 1px solid #f3c6d6;
+    background: white;
 }
 
 .Logo img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
 }
 
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 15px;
+}
+
+.navbar button {
+    background: none;
+    border: none;
+    font-size: 22px;
+    color: #8d7a84;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navbar button:hover {
+    color: #c76b98;
+}
+
+/* LINE */
+hr {
+    border: 1px solid #ead5dc;
+}
+
+/* ABOUT */
 .about-contacts {
     display: flex;
-    margin-top: 10px;
     background: #fff0f5;
+    margin-top: 15px;
 }
 
-.about, .contacts {
+.about,
+.contacts {
     flex: 1;
-    padding: 20px;
+    padding: 25px;
+    text-align: center;
 }
 
 .about {
-    border-right: 2px solid #f8c8dc;
+    border-right: 1px solid #f3c6d6;
 }
 
+.about p,
+.contacts p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #7a7075;
+}
+
+/* TITLES */
 h2 {
-    color: #c2185b;
+    color: #c76b98;
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+/* PROJECTS */
+.projects-section {
+    margin-top: 20px;
+}
+
+.projects-section h2 {
+    text-align: center;
 }
 
 .projects {
     display: flex;
-    justify-content: space-between;
 }
 
 .project-box {
-    width: 30%;
-    border: 1px solid #f8c8dc;
-    padding: 20px;
+    flex: 1;
+    border: 1px solid #f3c6d6;
+    padding: 40px 20px;
     text-align: center;
-    background: #ffffff;
+    background: white;
     transition: 0.3s;
 }
 
 .project-box:hover {
-    background: #ffe4ec;
-    transform:scale(1.05);
+    background: #fff7fa;
 }
 
+.project-box h3 {
+    color: #7a7075;
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.project-box p {
+    color: #8d7a84;
+    font-size: 18px;
+}
+
+/* CONTACT */
 .contact-me {
-    border: 1px solid #f8c8dc;
-    margin-top: 10px;
-    padding: 20px;
-    text-align: center;
+    border: 1px solid #f3c6d6;
+    margin-top: 20px;
     background: #fff0f5;
+    text-align: center;
+    padding: 30px 0;
 }
 
+/* FORM */
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-input, textarea {
+input,
+textarea {
     width: 60%;
-    padding: 10px;
+    padding: 14px;
     margin: 10px;
-    border: 1px solid #f8c8dc;
-    background: #fff;
+    border: 1px solid #f3c6d6;
     outline: none;
+    font-size: 15px;
+    background: white;
+    color: #7a7075;
 }
 
-input:focus, textarea:focus {
-    border-color: #d63384;
+textarea {
+    height: 100px;
+    resize: none;
 }
 
+input:focus,
+textarea:focus {
+    border-color: #c76b98;
+}
+
+/* BUTTON */
 button {
-    padding: 10px 20px;
+    padding: 12px 25px;
     border: none;
-    background: #ff8fab;
+    background: #e7a8c1;
     color: white;
+    font-size: 15px;
     cursor: pointer;
     transition: 0.3s;
 }
 
+button:hover {
+    background: #c76b98;
+}
 
- /*for Registration */
+/* REGISTER */
 .register-section {
-  border: 1px solid #f5b6c8;
-  padding: 30px;
-  margin-top: 30px;
-  text-align: center;
-  background: #fff5f8;
-}
-
-.register-section h2 {
-  color: #d81b60;
-  margin-bottom: 20px;
-}
-
-.register-form {
-  width: 60%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+    border: 1px solid #f3c6d6;
+    margin-top: 20px;
+    background: #fff0f5;
+    padding: 30px 0;
+    text-align: center;
 }
 
 .register-form input {
-  padding: 12px;
-  border: 1px solid #f5b6c8;
+    width: 35%;
 }
 
-.register-form button {
-  padding: 12px;
-  border: none;
-  background: #f48fb1;
-  color: white;
-  cursor: pointer;
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .header h1 {
+        font-size: 40px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .about-contacts {
+        flex-direction: column;
+    }
+
+    .about {
+        border-right: none;
+        border-bottom: 1px solid #f3c6d6;
+    }
+
+    .projects {
+        flex-direction: column;
+    }
+
+    input,
+    textarea,
+    .register-form input {
+        width: 85%;
+    }
 }
