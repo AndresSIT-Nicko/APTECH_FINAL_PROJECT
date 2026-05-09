@@ -156,31 +156,34 @@ function Layout() {
                     </section>
 
                     <hr />
+                    
+                   <section className="projects-section">
+                    <h2>My Projects</h2>
 
-                    <section className="projects-section">
-
-                        <h2>My Projects</h2>
-
-                        <div className="projects">
-
-                            <div className="project-box">
-                                <h3>Project 1</h3>
-                                <p>About my Project</p>
-                            </div>
-
-                            <div className="project-box">
-                                <h3>Project 2</h3>
-                                <p>About my Project</p>
-                            </div>
-
-                            <div className="project-box">
-                                <h3>Project 3</h3>
-                                <p>About my Project</p>
-                            </div>
-
+                    <div className="projects">
+                        <div className="project-box">
+                        <a href="https://andressit-nicko.github.io/FG_LAB3_Andres/" target="_blank">
+                            <h3>Project 1</h3>
+                            <p>About my Project</p>
+                        </a>
                         </div>
 
-                    </section>
+                        <div className="project-box">
+                        <a href="https://andressit-nicko.github.io/MG_LAB3_Andres/" target="_blank">
+                            <h3>Project 2</h3>
+                            <p>About my Project</p>
+                        </a>
+                    </div>
+
+                        <div className="project-box">
+                        <a href="https://andressit-nicko.github.io/MG_LAB5_Andres/" target="_blank">
+                            <h3>Project 3</h3>
+                            <p>About my Project</p>
+                        </a>
+                        </div>
+                    </div>
+                   </section>
+
                 </>
 
             )}
