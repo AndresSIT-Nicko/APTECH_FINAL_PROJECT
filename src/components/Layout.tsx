@@ -164,21 +164,21 @@ function Layout() {
                         <div className="project-box">
                         <a href="https://andressit-nicko.github.io/FG_LAB3_Andres/" target="_blank">
                             <h3>Project 1</h3>
-                            <p>About my Project</p>
+                            <p>First Grading Lab #3</p>
                         </a>
                         </div>
 
                         <div className="project-box">
                         <a href="https://andressit-nicko.github.io/MG_LAB3_Andres/" target="_blank">
                             <h3>Project 2</h3>
-                            <p>About my Project</p>
+                            <p>Midterm Lab #3</p>
                         </a>
                     </div>
 
                         <div className="project-box">
                         <a href="https://andressit-nicko.github.io/MG_LAB5_Andres/" target="_blank">
                             <h3>Project 3</h3>
-                            <p>About my Project</p>
+                            <p>Midterm Lab #5</p>
                         </a>
                         </div>
                     </div>

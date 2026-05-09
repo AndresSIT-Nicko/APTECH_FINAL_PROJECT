@@ -4,14 +4,14 @@ body {
     background: #fff5f7;
 }
 
-/* CONTAINER */
+
 .container {
     width: 90%;
     margin: auto;
     padding-bottom: 30px;
 }
 
-/* HEADER */
+
 .header {
     display: flex;
     align-items: center;
@@ -28,7 +28,7 @@ body {
     font-weight: normal;
 }
 
-/* LOGO */
+
 .Logo {
     position: absolute;
     left: 20px;
@@ -46,7 +46,7 @@ body {
     object-fit: cover;
 }
 
-/* NAVBAR */
+
 .navbar {
     display: flex;
     justify-content: center;
@@ -67,12 +67,15 @@ body {
     color: #c76b98;
 }
 
-/* LINE */
+
+
+
 hr {
     border: 1px solid #ead5dc;
 }
 
-/* ABOUT */
+
+
 .about-contacts {
     display: flex;
     background: #fff0f5;
@@ -97,7 +100,8 @@ hr {
     color: #7a7075;
 }
 
-/* TITLES */
+
+
 h2 {
     color: #c76b98;
     font-size: 36px;
@@ -105,7 +109,8 @@ h2 {
     font-weight: normal;
 }
 
-/* PROJECTS */
+
+
 .projects-section {
     margin-top: 20px;
 }
@@ -142,7 +147,8 @@ h2 {
     font-size: 18px;
 }
 
-/* CONTACT */
+
+
 .contact-me {
     border: 1px solid #f3c6d6;
     margin-top: 20px;
@@ -151,7 +157,8 @@ h2 {
     padding: 30px 0;
 }
 
-/* FORM */
+
+
 form {
     display: flex;
     flex-direction: column;
@@ -180,7 +187,8 @@ textarea:focus {
     border-color: #c76b98;
 }
 
-/* BUTTON */
+
+
 button {
     padding: 12px 25px;
     border: none;
@@ -195,7 +203,8 @@ button:hover {
     background: #c76b98;
 }
 
-/* REGISTER */
+
+
 .register-section {
     border: 1px solid #f3c6d6;
     margin-top: 20px;
@@ -208,7 +217,8 @@ button:hover {
     width: 35%;
 }
 
-/* RESPONSIVE */
+
+
 @media (max-width: 768px) {
 
     .header h1 {
