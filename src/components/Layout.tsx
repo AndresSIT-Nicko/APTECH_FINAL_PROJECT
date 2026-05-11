@@ -1,6 +1,7 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 
+
 function Layout() {
 
     type FormData = {
@@ -92,27 +93,28 @@ function Layout() {
     return (
 
         <div>
-            <header>
-
-                <h1 onClick={() => setActiveSection("portfolio")}>
+                <h1 onClick={() => setActiveSection("home")}>
                     Home Page
                 </h1>
 
-            </header>
 
+                <h1 onClick={() => setActiveSection("about")}>
+                    About Me
+                </h1>
+                {activeSection === "about" && (
+                    <section>
+                        <h2>About Me</h2>
+                        <p>Hello, I am Nicko Andres, 19 years old</p>
+                    </section>
+                )}
+           
            
             <nav>
-
-                <button onClick={() => setActiveSection("register")}>
-                    Create Account
-                </button>
-
-                <button onClick={() => setActiveSection("contact")}>
+                <h1 onClick={() => setActiveSection("contact")}>
                     Contact Me
-                </button>
+                </h1>
 
             </nav>
-            <hr />
 
             {activeSection === "contact" && (
 
