@@ -1,7 +1,6 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 
-
 function Layout() {
 
     type FormData = {
@@ -65,11 +64,12 @@ function Layout() {
                 import.meta.env.VITE_EMAIL_SERVICE_ID,
                 import.meta.env.VITE_EMAIL_TEMPLATE_ID,
                 {
+                    
                     from_name: formData.name,
                     from_email: formData.email,
                     message: formData.message,
                 },
-                import.meta.env.VITE_EMAIL_PUBLIC_KEY
+                import.meta.env.VITE_EMAIL_API_KEY
             );
 
             setStatus("Message sent successfully!");
@@ -91,27 +91,36 @@ function Layout() {
     };
 
     return (
-
         <div>
                 <h1 onClick={() => setActiveSection("home")}>
-                    Home Page
+                    Home
                 </h1>
+                {activeSection === "home" && (
+                    <section>
+                        <h2>My Portfolio</h2>
+                        <p>Welcome to my Portfolio, 
+                            if you guys ever want to contact me just go 
+                        </p>
+                    </section>
+                )}
 
-
+<hr></hr>
                 <h1 onClick={() => setActiveSection("about")}>
                     About
                 </h1>
                 {activeSection === "about" && (
                     <section>
-                        <h2>About Me</h2>
-                        <p>Hello, I am Nicko Andres, 19 years old</p>
+                        <p>Hello Everyone, I am Nicko Andres, 19 years old. 
+                            I live in Sal-angan, Ampucao, Itogon 
+
+                        </p>
                     </section>
                 )}
-           
+<hr></hr>    
            
             <nav>
                 <h1 onClick={() => setActiveSection("contact")}>
-                    Contact Me
+                    Contact
                 </h1>
 
             </nav>

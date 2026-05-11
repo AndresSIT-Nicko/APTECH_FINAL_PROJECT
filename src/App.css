@@ -1,9 +1,8 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: #ffffff;
+    background: #fff5f7;
 }
-
 
 .header {
     display: flex;
@@ -16,6 +15,13 @@ body {
 .header h1 {
     font-size: 55px;
     color: #c76b98;
+    margin: 0;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+p {
+    color: #000000;
     margin: 0;
     cursor: pointer;
     font-weight: normal;
