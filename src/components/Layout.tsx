@@ -99,7 +99,7 @@ function Layout() {
 
 
                 <h1 onClick={() => setActiveSection("about")}>
-                    About Me
+                    About
                 </h1>
                 {activeSection === "about" && (
                     <section>
