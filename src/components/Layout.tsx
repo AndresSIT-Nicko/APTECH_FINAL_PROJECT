@@ -1,7 +1,5 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
-import logo from "../Pictures/Nickzz Logo.png";
-import Register from "./Register";
 
 function Layout() {
 
@@ -93,23 +91,17 @@ function Layout() {
 
     return (
 
-        <div className="container">
-
-            {/* HEADER */}
-            <header className="header">
-
-                <div className="Logo">
-                    <img src={logo} alt="Nickzz Logo" />
-                </div>
+        <div>
+            <header>
 
                 <h1 onClick={() => setActiveSection("portfolio")}>
-                    My Portfolio
+                    Home Page
                 </h1>
 
             </header>
 
-            {/* NAVBAR */}
-            <nav className="navbar">
+           
+            <nav>
 
                 <button onClick={() => setActiveSection("register")}>
                     Create Account
@@ -120,78 +112,11 @@ function Layout() {
                 </button>
 
             </nav>
-
             <hr />
 
-            {/* PORTFOLIO */}
-            {activeSection === "portfolio" && (
-
-                <>
-                    <section className="about-contacts">
-
-                        <div className="about">
-
-                            <h2>About Me</h2>
-
-                            <p>
-                                Hi, I am Nicko Andres. I live in Sal-angan,
-                                Ampucao, Itogon. I am 19 years old and
-                                currently studying at University of Baguio
-                                taking up Bachelor of Science in Information
-                                Technology (BSIT).
-                            </p>
-
-                        </div>
-
-                        <div className="contacts">
-
-                            <h2>My Social</h2>
-
-                            <p><strong>Facebook:</strong> Nicko Andres</p>
-                            <p><strong>Instagram:</strong> nickzzz706</p>
-                            <p><strong>Email:</strong> nickoandres6652@gmail.com</p>
-
-                        </div>
-
-                    </section>
-
-                    <hr />
-                    
-                   <section className="projects-section">
-                    <h2>My Projects</h2>
-
-                    <div className="projects">
-                        <div className="project-box">
-                        <a href="https://andressit-nicko.github.io/FG_LAB3_Andres/" target="_blank">
-                            <h3>Project 1</h3>
-                            <p>First Grading Lab #3</p>
-                        </a>
-                        </div>
-
-                        <div className="project-box">
-                        <a href="https://andressit-nicko.github.io/MG_LAB3_Andres/" target="_blank">
-                            <h3>Project 2</h3>
-                            <p>Midterm Lab #3</p>
-                        </a>
-                    </div>
-
-                        <div className="project-box">
-                        <a href="https://andressit-nicko.github.io/MG_LAB5_Andres/" target="_blank">
-                            <h3>Project 3</h3>
-                            <p>Midterm Lab #5</p>
-                        </a>
-                        </div>
-                    </div>
-                   </section>
-
-                </>
-
-            )}
-
-            {/* CONTACT */}
             {activeSection === "contact" && (
 
-                <section className="contact-me">
+                <section>
 
                     <h2>Contact Me</h2>
 
@@ -231,12 +156,6 @@ function Layout() {
                 </section>
 
             )}
-
-            {/* REGISTER */}
-            {activeSection === "register" && (
-                <Register />
-            )}
-
         </div>
     );
 }
